@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>About Me Page</title>
+    <title>Posts Page</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -79,45 +79,56 @@
     <br/>
 
     <!-- Page Content -->
-    <div class="content-section-a">
-        <div class="container">
 
+    <div class="content-section-a">
+        
+        <div class="container">
+            
+            <link rel="stylesheet" href="../css/postlist-page.css"/>
             <div class="container">
-            <div class="row">
-                <div class="col-sm-2 col-md-2">
-                    <img src="../img/bruce-wayne-armani.jpg" alt="" class="img-rounded img-responsive" />
+                <h4>살아오면서 그리고 살아가면서 같이했던 몇몇 기술이야기...</h4>
+                <p>writed by kiss</p>
+                <div class="row">
+                    <div class="panel panel-primary filterable">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">Tech Post</h4>
+                            <div class="pull-right">
+                                <button class="btn btn-default btn-xs btn-filter"><span class="glyphicon glyphicon-filter"></span> Filter</button>
+                            </div>
+                        </div>
+                        <table class="table">
+                            <colgroup>
+                                <col class="col-xs-2"/>
+                                <col class="col-xs-10"/>
+                            </colgroup>
+                            <thead>
+                                <tr class="filters">
+                                    <th><input type="text" class="form-control" placeholder="Category" disabled></th>
+                                    <th><input type="text" class="form-control" placeholder="Title" disabled></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Machine Learning</td>
+                                    <td><a href="./posts/post_1.html">Machine Learning 시대가 오는가</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Cloud platform</td>
+                                    <td><a href="#">Cloud Big3(AWS, Azure, GCE)의 A.I 전쟁의 서막</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Search engine</td>
+                                    <td><a href="#">Bigdata, Search, Machine Learning의 조합</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                <div class="col-sm-4 col-md-4">
-                    <blockquote>
-                        <p>woo young Ryu</p> <small><cite >Seoul, Korea  <i class="glyphicon glyphicon-map-marker"></i></cite></small>
-                    </blockquote>
-                    <p> <i class="glyphicon glyphicon-envelope"></i> kiss72k@다음.net <br/>
-                        <i class="glyphicon glyphicon-globe"></i> kiss72k.github.io <br/>
-                        <i class="glyphicon glyphicon-gift"></i> one day, 197X</p>
-                </div>
-                <div class="col-sm-4 col-md-6">
-                    <blockquote>
-                        <small>안녕하세요. 프로그래머 키쓰라고 합니다.<br/>
-                               <br/>
-                               사진은 브루스 웨인을 가져다 썼어요. ㅋㅋㅋ<br/>
-                               돈많고 잘생기고 무엇보다 회사경영에 관심이 없더라구요.<br/>
-                               이런 CEO 밑에 들어가서 펑펑~ 놀면서 일하고 싶습니다. -_-;;<br/>
-                               머 아뭏튼 이 글을 보고 계시는 분들은 도대체 뭐하는 분들인지...<br/>
-                               어떻게 찾아들어왔는지 궁금하군요~<br/>
-                               <br/>
-                               옷기만 스쳐도 인연이라는데..<br/>
-                               여러 클릭질로 여기까지 오신분들에게 심심한 애도를 표하며,<br/>
-                               좋은 하루 되시기를 바랍니다.<br/>
-                               <br/>
-                               영원한 평범레벨 프로그래머 키쓰였습니다. ^^
-                        </small>
-                    </blockquote>
-                </div>
-            </div>
             </div>
 
         </div>
         <!-- /.container -->
+
     </div>
     <!-- /.content-section-a -->
     
@@ -155,6 +166,8 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="../js/bootstrap.min.js"></script>
 
+    <!-- Custom JavaScript -->
+    <script src="../js/postlist-page.js"></script>
 </body>
 
 </html>
