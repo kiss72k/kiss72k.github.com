@@ -9,10 +9,10 @@ $(".readMore").click(function() {
 
     $(this).next().toggle(function() {
         if(This.text()=="Read") {
-            This.text("Hide") 
+            This.text("Hide");
         }
         else {
-            This.text("Read") 
+            This.text("Read");
         }
     })
 });
